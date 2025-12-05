@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* add cyberpunk portfolio styles */
+@layer components {
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-linear-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent;
+  }
+
+  /* Glow animations */
+  @keyframes text-glow {
+    from {
+      text-shadow: 0 0 5px rgba(253, 224, 71, 0.5);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(253, 186, 116, 0.8);
+    }
+  }
+
+  @keyframes float {
+    from {
+      transform: translateY(0) rotate(0deg);
+    }
+    to {
+      transform: translateY(-100vh) rotate(360deg);
+    }
+  }
+
+  .text-glow-animation {
+    animation: text-glow 2s infinite alternate;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior:  smooth;
+  }
+
+  /* Add mobile menu animation styles */
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out-right {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
+
+ ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #000;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(135deg, rgb(253, 224, 71), rgb(253, 186, 116));
+      border-radius: 5px;
+    }
