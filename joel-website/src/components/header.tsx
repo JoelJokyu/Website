@@ -1,12 +1,12 @@
 const Header: React.FC = () => {
   return (
     <header className="relative pt-32 pb-20 px-6 text-center overflow-hidden border-b border-white/10 mt-12">
-      {/* animated gradient background */}
+      {/* animation background */}
       <div
         className="absolute inset-0 opacity-10 animate-spin pointer-events-none"
         style={{
           background:
-            "linear-gradient(to bottom right, transparent 0%, transparent 49%, rgb(204, 204, 255) 50%, transparent 51%, transparent 100%)",
+            "linear-gradient(to bottom right, transparent 0%, transparent 49%, rgb(204, 204, 0) 50%, transparent 51%, transparent 100%)",
           animationDuration: "8s",
         }}
       />

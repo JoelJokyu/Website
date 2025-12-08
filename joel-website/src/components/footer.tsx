@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Github from "../assets/github.svg";
 import Linkedin from "../assets/linkedin.svg";
 import ArrowUp from "../assets/arrow-up.svg";
+import myPdf from "../assets/Joel_Ojukwu_Resume.pdf";
+import CV from "../assets/cv.svg"
 
 const Footer: React.FC = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -27,6 +29,7 @@ const Footer: React.FC = () => {
           {[
             { icon: Github, link: "https://github.com/JoelJokyu" },
             { icon: Linkedin, link: "/" },
+            { icon: CV, link: myPdf },
           ].map((social) => {
             const IconComponent = social.icon;
             return (
@@ -53,7 +56,7 @@ const Footer: React.FC = () => {
       {showBackToTop && (
         <button
           onClick={scrollToTop}
-          className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-linear-to-r hover:from-yellow-300 hover:to-orange-300 flex items-center justify-center text-white hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-yellow-300/50"
+          className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-linear-to-r from-yellow-300 to-orange-300 flex items-center justify-center text-white hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-yellow-300/50"
           aria-label="Back to top"
         >
           <img src={ArrowUp} className="w-6 h-6 " />

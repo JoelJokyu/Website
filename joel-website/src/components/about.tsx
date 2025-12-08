@@ -46,7 +46,6 @@ const About: React.FC = () => {
             />
           </div>
 
-          {/* Animated borders */}
           <div
             className={`absolute -top-6 -left-6 w-full h-full border-2 border-green-500 rounded-xl z-0 transition-all duration-500 ${
               hasHovered ? "-top-4 -left-4" : ""
