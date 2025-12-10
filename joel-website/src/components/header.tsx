@@ -1,3 +1,6 @@
+import Describeme from "@/Text/describeme";
+import Name from "../Text/name";
+
 const Header: React.FC = () => {
   return (
     <header className="relative pt-32 pb-20 px-6 text-center overflow-hidden border-b border-white/10 mt-12">
@@ -13,11 +16,11 @@ const Header: React.FC = () => {
 
       <div className="relative z-10 max-w-3xl mx-auto">
         <h1 className="text-5xl md:text-6xl font-bold font-orbitron gradient-text mb-6 uppercase tracking-wider text-glow-animation">
-          Ojukwu Joel C.
+          <Name />
         </h1>
 
         <p className="text-xl md:text-2xl text-white/90 mb-8">
-          Electrical and Computer Engineer
+          <Describeme />
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
