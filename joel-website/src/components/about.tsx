@@ -16,9 +16,9 @@ const About: React.FC = () => {
 
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <p className="text-lg text-white/90 leading-relaxed about-me-text">
+          <div className="text-lg text-white/90 leading-relaxed about-me-text">
             <AboutmeText />
-          </p>
+          </div>
         </div>
 
         <div className="relative">

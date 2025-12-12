@@ -70,10 +70,11 @@ const Projects: React.FC = () => {
               chaos={0.5}
               thickness={2}
               style={{ borderRadius: 16 }}
+              className="hover:scale-105 hover:border-yellow-300/50"
             >
               <div
                 key={project.title}
-                className="glass rounded-xl overflow-hidden hover:-translate-y-3 hover:shadow-xl hover:shadow-orange-300/20 transition-all duration-300 group border border-orange-300/20 hover:border-orange-300/50 flex flex-col"
+                className="glass rounded-xl overflow-hidden hover:scale-105 hover:shadow-xl hover:shadow-orange-300/20 transition-all duration-300 group border border-orange-300/20 hover:border-orange-300/50 flex flex-col"
               >
                 <div className="relative h-40 md:h-48 overflow-hidden">
                   <img

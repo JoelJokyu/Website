@@ -19,9 +19,9 @@ const Header: React.FC = () => {
           <Name />
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/90 mb-8">
+        <div className="">
           <Describeme />
-        </p>
+        </div>
 
         <div className="flex flex-wrap justify-center gap-4">
           {[

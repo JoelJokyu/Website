@@ -51,12 +51,12 @@ const Skills: React.FC = () => {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {skills.map((skill) => {
+            {skills.map((skill, id) => {
               const IconComponent = skill.icon;
               return (
                 <>
                   <div
-                    key={skill.title}
+                    key={id}
                     className="glass rounded-xl p-8 hover:-translate-y-3 hover:shadow-xl hover:shadow-yellow-300/20 transition-all duration-300 border-yellow-300 hover:border-orange-300 group cursor-pointer"
                   >
                     <img

@@ -7,7 +7,7 @@ const Name: React.FC = () => {
     <div style={{ marginTop: "4rem" }}>
       <DecryptedText
         text="Ojukwu Joel C."
-        animateOn="view"
+        animateOn="both"
         revealDirection="center"
       />
     </div>

@@ -6,10 +6,13 @@ import LandingPage from "./pages/LandingPage";
 import FadeContent from "./animations/FadeContent";
 
 import Galaxy from "./animations/Galaxy";
+import Snowing from "./components/snowing";
 
 function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white relative overflow-x-hidden">
+      <Snowing />
+      
       <Galaxy />
       <Navigation />
       <main className="relative z-10">
